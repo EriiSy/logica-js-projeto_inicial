@@ -12,7 +12,7 @@ let valorDigitado = prompt('Tente acertar o número secreto escondido entre 1 a 
 // Verificação para ver se o valor digitado pelo usuário 
 // é igual ao número secreto. 
 if ( valorDigitado == numeroSecreto){
-    console.log('Nice, o número secreto era');
+    console.log(`Nice, o número secreto era ${numeroSecreto}`);
 }else{
     alert('Não era esse...Tente novamente!');
 }
