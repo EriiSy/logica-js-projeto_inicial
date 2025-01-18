@@ -5,12 +5,13 @@ let Mensagem = 'Olá...Td bem?';
 alert(Mensagem);
 
 // Declaração das variáveis 
-let numeroSecreto = 50; 
+let numeroSecreto = parseInt(Math.random()* 100 + 1 ); 
+console.log(numeroSecreto); 
 let valorDigitado 
 let tentativas = 1;
 
 while(valorDigitado != numeroSecreto){
-   valorDigitado = prompt('Tente acertar o número secreto escondido');
+   valorDigitado = prompt('Tente acertar o número secreto escondido entre 1 e 100');
     
 // Verificação para ver se o valor digitado pelo usuário 
 // é igual ao número secreto ou não. Caso não seja
@@ -29,9 +30,9 @@ while(valorDigitado != numeroSecreto){
 }
 }
 // Operador Ternário 
-let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativas';
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
 
-alert(`Nice, o número secreto era ${numeroSecreto}\nTentativas: ${palavraTentativa}`);
+alert(`Nice, você encontrou o número secreto com ${tentativas} ${palavraTentativa}\nN.S: ${numeroSecreto}`);
 
 
 
