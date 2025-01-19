@@ -4,14 +4,18 @@ alert('Bom...vamos começar? Digite');
 let Mensagem = 'Olá...Td bem?';
 alert(Mensagem);
 
+const VALOR_INICIAL = 1;
+const VALOR_FINAL = 1000;
+const COMPLEMENTO = 1;
+
 // Declaração das variáveis 
-let numeroSecreto = parseInt(Math.random()* 100 + 1 ); 
+let numeroSecreto = parseInt(Math.random()* VALOR_FINAL +  COMPLEMENTO ); 
 console.log(numeroSecreto); 
 let valorDigitado 
 let tentativas = 1;
 
 while(valorDigitado != numeroSecreto){
-   valorDigitado = prompt('Tente acertar o número secreto escondido entre 1 e 100');
+   valorDigitado = prompt(`Tente acertar o número secreto escondido entre ${VALOR_INICIAL} e ${VALOR_FINAL}`);
     
 // Verificação para ver se o valor digitado pelo usuário 
 // é igual ao número secreto ou não. Caso não seja
